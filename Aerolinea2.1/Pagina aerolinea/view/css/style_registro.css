@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(imagenes/fondoregistro.jpeg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+form {
+    width: 500px;
+    margin: auto;
+    background: #ddd;
+    padding: 20px;
+    margin-top: 60px;
+    color: black;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+label, input,select {
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+}
+
+input, select {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin: auto;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #171717;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: gray;
+
+}
+
+
+.error {
+    color: blue;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    width: 100%;
+    z-index: 100%;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background: #e91e63;
+}
+
+
+@media screen and (max-width: 800px) {
+    .registro{
+        grid-template-columns: 1fr;
+    }
+
+    .registro_grupo-terminos,
+    .registro_mensaje,
+    .registro_grupo-btn-enviar {
+        grid-column: 1;
+    }
+    
+}
